@@ -77,7 +77,7 @@ class RegisterActivity : AppCompatActivity() {
         var nama = binding.EtNama.text.toString()
         var uuid = fAuth.uid.toString()
 
-        dRef.child("data_user").child(uuid).child(nama).setValue(UserModel(email, nama, uuid))
+        dRef.child("data_user").child(uuid).setValue(UserModel(email, nama, uuid))
 
         if (true){
             Firebase.auth.signOut()

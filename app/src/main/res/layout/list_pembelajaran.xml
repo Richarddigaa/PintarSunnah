@@ -33,6 +33,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
+
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="30dp"
@@ -40,16 +41,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_baseline_radio_button_unchecked_24" />
-
-            <ImageView
-                android:id="@+id/Img_Ceklis"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_baseline_check_circle_outline_24" />
+                app:srcCompat="@drawable/ic_baseline_document_scanner_24" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

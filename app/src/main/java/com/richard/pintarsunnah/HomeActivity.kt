@@ -23,6 +23,13 @@ class HomeActivity : AppCompatActivity() {
             materi.setOnClickListener {
                 startActivity(Intent(this@HomeActivity, ListPelajaranActivity::class.java))
             }
+
+            bottomNavigation.setOnNavigationItemSelectedListener { item ->
+                if (item.itemId == R.id.menuAccount){
+                    startActivity(Intent(this@HomeActivity, AccountActivity::class.java))
+                }
+                true
+            }
         }
     }
 

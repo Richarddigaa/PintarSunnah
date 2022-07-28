@@ -4,7 +4,6 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.richard.pintarsunnah.PelajaranActivity
@@ -15,7 +14,6 @@ class PelajaranAdapter(val list: ArrayList<PelajaranModel>) : RecyclerView.Adapt
 
     class Pelajaran (itemView: View) : RecyclerView.ViewHolder(itemView){
         var tv_JudulBab = itemView.findViewById<TextView>(R.id.Tv_JudulBab)
-        var img = itemView.findViewById<ImageView>(R.id.Img_Ceklis)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Pelajaran {
@@ -24,8 +22,6 @@ class PelajaranAdapter(val list: ArrayList<PelajaranModel>) : RecyclerView.Adapt
 
     override fun onBindViewHolder(holder: Pelajaran, position: Int) {
         val result = list[position]
-
-        holder.img.visibility = View.GONE
 
         holder.tv_JudulBab.text = result.judul
 

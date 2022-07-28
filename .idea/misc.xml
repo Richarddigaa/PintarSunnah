@@ -6,12 +6,16 @@
         <entry key="..\:/Users/PC-07/AndroidStudioProjects/PintarSunnah/app/src/main/res/drawable/ic_baseline_playlist_add_check_24.xml" value="0.2765" />
         <entry key="..\:/Users/PC-07/AndroidStudioProjects/PintarSunnah/app/src/main/res/drawable/ic_baseline_radio_button_unchecked_24.xml" value="0.2765" />
         <entry key="..\:/Users/PC-07/AndroidStudioProjects/PintarSunnah/app/src/main/res/layout/activity_account.xml" value="0.32592592592592595" />
+        <entry key="..\:/Users/PC-07/AndroidStudioProjects/PintarSunnah/app/src/main/res/layout/activity_admin.xml" value="0.32592592592592595" />
+        <entry key="..\:/Users/PC-07/AndroidStudioProjects/PintarSunnah/app/src/main/res/layout/activity_exam.xml" value="0.2443595973620271" />
         <entry key="..\:/Users/PC-07/AndroidStudioProjects/PintarSunnah/app/src/main/res/layout/activity_home.xml" value="0.32592592592592595" />
-        <entry key="..\:/Users/PC-07/AndroidStudioProjects/PintarSunnah/app/src/main/res/layout/activity_list_pelajaran.xml" value="0.1" />
+        <entry key="..\:/Users/PC-07/AndroidStudioProjects/PintarSunnah/app/src/main/res/layout/activity_list_pelajaran.xml" value="0.33" />
         <entry key="..\:/Users/PC-07/AndroidStudioProjects/PintarSunnah/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/PC-07/AndroidStudioProjects/PintarSunnah/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/PC-07/AndroidStudioProjects/PintarSunnah/app/src/main/res/layout/activity_pelajaran.xml" value="0.33" />
         <entry key="..\:/Users/PC-07/AndroidStudioProjects/PintarSunnah/app/src/main/res/layout/activity_register.xml" value="0.32592592592592595" />
+        <entry key="..\:/Users/PC-07/AndroidStudioProjects/PintarSunnah/app/src/main/res/layout/fragment_account.xml" value="0.31342592592592594" />
+        <entry key="..\:/Users/PC-07/AndroidStudioProjects/PintarSunnah/app/src/main/res/layout/fragment_home.xml" value="0.32592592592592595" />
         <entry key="..\:/Users/PC-07/AndroidStudioProjects/PintarSunnah/app/src/main/res/layout/list_pembelajaran.xml" value="0.33" />
         <entry key="..\:/Users/PC-07/AndroidStudioProjects/PintarSunnah/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.365625" />
         <entry key="..\:/Users/PC-07/AndroidStudioProjects/PintarSunnah/app/src/main/res/menu/menu_home.xml" value="0.32592592592592595" />

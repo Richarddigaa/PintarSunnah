@@ -1,7 +1,9 @@
 package com.richard.pintarsunnah
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.firebase.database.*
 import com.richard.pintarsunnah.adapter.PelajaranAdapter
@@ -32,13 +34,18 @@ class ListPelajaranActivity : AppCompatActivity() {
         binding.RvListPelajaran.setHasFixedSize(true)
 
         getListData()
+
+        binding.finalExam.setOnClickListener {
+            startActivity(Intent(this, ExamActivity::class.java))
+        }
     }
 
     private fun getListData() {
-        dRef.child("data_pelajaran").addValueEventListener(object : ValueEventListener{
+        dRef.child("data_pelajaran").child("Dasar Islam").addValueEventListener(object : ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot) {
                 if (snapshot.exists()) {
                     for (listUserSnapshot in snapshot.children) {
+                        binding.progressBar.visibility = View.GONE
                         val listUser = listUserSnapshot.getValue(PelajaranModel::class.java)
                         listPelajaran.add(listUser!!)
                     }

@@ -16,6 +16,14 @@
         android:theme="@style/Theme.PintarSunnah"
         tools:targetApi="31">
         <activity
+            android:name=".AdminActivity"
+            android:exported="true" >
+
+        </activity>
+        <activity
+            android:name=".ExamActivity"
+            android:exported="false" />
+        <activity
             android:name=".PelajaranActivity"
             android:parentActivityName=".ListPelajaranActivity" />
         <activity
