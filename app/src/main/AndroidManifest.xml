@@ -16,10 +16,16 @@
         android:theme="@style/Theme.PintarSunnah"
         tools:targetApi="31">
         <activity
+            android:name=".TestExamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FinalExamActivity"
+            android:exported="false"
+            android:label="@string/title_activity_final_exam"
+            android:theme="@style/Theme.PintarSunnah.NoActionBar" />
+        <activity
             android:name=".AdminActivity"
-            android:exported="true" >
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".ExamActivity"
             android:exported="false" />

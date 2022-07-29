@@ -40,6 +40,7 @@
             </LinearLayout>
 
             <RadioGroup
+                android:id="@+id/Rb_No1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" >
 
@@ -103,6 +104,7 @@
             </LinearLayout>
 
             <RadioGroup
+                android:id="@+id/Rb_No2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" >
 
@@ -166,6 +168,7 @@
             </LinearLayout>
 
             <RadioGroup
+                android:id="@+id/Rb_No3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" >
 
@@ -229,6 +232,7 @@
             </LinearLayout>
 
             <RadioGroup
+                android:id="@+id/Rb_No4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" >
 
@@ -292,6 +296,7 @@
             </LinearLayout>
 
             <RadioGroup
+                android:id="@+id/Rb_No5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" >
 
@@ -355,6 +360,7 @@
             </LinearLayout>
 
             <RadioGroup
+                android:id="@+id/Rb_No6"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" >
 
@@ -418,6 +424,7 @@
             </LinearLayout>
 
             <RadioGroup
+                android:id="@+id/Rb_No7"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" >
 
@@ -481,6 +488,7 @@
             </LinearLayout>
 
             <RadioGroup
+                android:id="@+id/Rb_No8"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" >
 
@@ -544,6 +552,7 @@
             </LinearLayout>
 
             <RadioGroup
+                android:id="@+id/Rb_No9"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" >
 
@@ -607,6 +616,7 @@
             </LinearLayout>
 
             <RadioGroup
+                android:id="@+id/Rb_No10"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" >
 
@@ -670,6 +680,7 @@
             </LinearLayout>
 
             <RadioGroup
+                android:id="@+id/Rb_No11"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" >
 
@@ -733,6 +744,7 @@
             </LinearLayout>
 
             <RadioGroup
+                android:id="@+id/Rb_No12"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" >
 
@@ -796,6 +808,7 @@
             </LinearLayout>
 
             <RadioGroup
+                android:id="@+id/Rb_No13"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" >
 
@@ -859,6 +872,7 @@
             </LinearLayout>
 
             <RadioGroup
+                android:id="@+id/Rb_No14"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" >
 
@@ -922,6 +936,7 @@
             </LinearLayout>
 
             <RadioGroup
+                android:id="@+id/Rb_No15"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" >
 
@@ -956,6 +971,12 @@
             </RadioGroup>
 
         </LinearLayout>
+
+        <Button
+            android:id="@+id/Btn_Selesai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selesai" />
 
     </LinearLayout>
 
