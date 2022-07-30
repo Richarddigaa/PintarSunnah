@@ -36,7 +36,7 @@ class ListPelajaranActivity : AppCompatActivity() {
         getListData()
 
         binding.finalExam.setOnClickListener {
-            startActivity(Intent(this, ExamActivity::class.java))
+            startActivity(Intent(this, TestExamActivity::class.java))
         }
     }
 

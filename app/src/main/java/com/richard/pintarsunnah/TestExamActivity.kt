@@ -1,14 +1,21 @@
 package com.richard.pintarsunnah
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
+import android.widget.RadioButton
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.richard.pintarsunnah.databinding.ActivityTestExamBinding
 
-class TestExamActivity : AppCompatActivity() {
+class TestExamActivity() : AppCompatActivity() {
 
     private lateinit var binding: ActivityTestExamBinding
 
     private var nomor = 0
+
+    var hasil = 0.0
+    var benar = 0
+    var salah = 0
 
     private val pertanyaan = arrayOf(
         "1. Pada pelajaran ini topik bahasan dari hadis arbain nawawi ke ?",
@@ -71,6 +78,52 @@ class TestExamActivity : AppCompatActivity() {
         binding = ActivityTestExamBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.apply {
+            TvPertanyaan.setText(pertanyaan[nomor])
+            RbA.setText(pilihan[0])
+            RbB.setText(pilihan[1])
+            RbC.setText(pilihan[2])
+            RbD.setText(pilihan[3])
 
+            RbPilihan.check(0)
+            benar = 0
+            salah = 0
+
+            BtnNext.setOnClickListener {
+                if (RbA.isChecked || RbB.isChecked || RbC.isChecked || RbD.isChecked){
+                    val jawabanUser = findViewById(RbPilihan.getCheckedRadioButtonId()) as RadioButton
+                    val ambilJawaban = jawabanUser.text.toString()
+
+                    RbPilihan.check(0)
+
+                    if (ambilJawaban.equals(jawaban[nomor])){
+                        benar++
+                    } else {
+                        salah++
+                    }
+
+                    nomor++
+                    if (nomor < pertanyaan.size){
+                        TvPertanyaan.setText(pertanyaan[nomor])
+                        RbA.setText(pilihan[(nomor * 4) + 0])
+                        RbB.setText(pilihan[(nomor * 4) + 1])
+                        RbC.setText(pilihan[(nomor * 4) + 2])
+                        RbD.setText(pilihan[(nomor * 4) + 3])
+                    } else {
+                        hasil = (benar * 6.6) + 1
+
+                        val intent = Intent(this@TestExamActivity, HasilExamActivity::class.java)
+                        intent.putExtra("hasil", hasil)
+                        intent.putExtra("benar", benar)
+                        intent.putExtra("salah", salah)
+                        startActivity(intent)
+
+                        Toast.makeText(this@TestExamActivity, hasil.toString(), Toast.LENGTH_SHORT).show()
+                    }
+                } else {
+                    Toast.makeText(this@TestExamActivity, "Tidak boleh kosong", Toast.LENGTH_SHORT).show()
+                }
+            }
+        }
     }
 }
