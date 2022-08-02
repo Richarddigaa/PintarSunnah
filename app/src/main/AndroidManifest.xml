@@ -17,16 +17,13 @@
         tools:targetApi="31">
         <activity
             android:name=".HasilExamActivity"
-            android:exported="false" />
+            android:parentActivityName=".ListPelajaranActivity" />
         <activity
             android:name=".TestExamActivity"
-            android:exported="false" />
+            android:parentActivityName=".ListPelajaranActivity" />
         <activity
             android:name=".AdminActivity"
             android:exported="true" />
-        <activity
-            android:name=".ExamActivity"
-            android:exported="false" />
         <activity
             android:name=".PelajaranActivity"
             android:parentActivityName=".ListPelajaranActivity" />

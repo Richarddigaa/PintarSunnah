@@ -117,8 +117,6 @@ class TestExamActivity() : AppCompatActivity() {
                         intent.putExtra("benar", benar)
                         intent.putExtra("salah", salah)
                         startActivity(intent)
-
-                        Toast.makeText(this@TestExamActivity, hasil.toString(), Toast.LENGTH_SHORT).show()
                     }
                 } else {
                     Toast.makeText(this@TestExamActivity, "Tidak boleh kosong", Toast.LENGTH_SHORT).show()
