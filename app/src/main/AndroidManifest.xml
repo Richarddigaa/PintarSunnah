@@ -22,9 +22,6 @@
             android:name=".TestExamActivity"
             android:parentActivityName=".ListPelajaranActivity" />
         <activity
-            android:name=".AdminActivity"
-            android:exported="true" />
-        <activity
             android:name=".PelajaranActivity"
             android:parentActivityName=".ListPelajaranActivity" />
         <activity
