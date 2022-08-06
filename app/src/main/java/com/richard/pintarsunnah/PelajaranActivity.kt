@@ -1,5 +1,6 @@
 package com.richard.pintarsunnah
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.bumptech.glide.Glide
@@ -34,7 +35,7 @@ class PelajaranActivity : AppCompatActivity() {
 
         binding.apply {
             BtnSelesai.setOnClickListener {
-
+                startActivity(Intent(this@PelajaranActivity, ListPelajaranActivity::class.java))
             }
         }
     }
