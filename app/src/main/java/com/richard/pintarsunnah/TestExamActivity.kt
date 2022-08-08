@@ -13,9 +13,9 @@ class TestExamActivity() : AppCompatActivity() {
 
     private var nomor = 0
 
-    var hasil = 0.0
-    var benar = 0
-    var salah = 0
+    private var hasil = 0.0
+    private var benar = 0
+    private var salah = 0
 
     private val pertanyaan = arrayOf(
         "1. Pada pelajaran ini topik bahasan dari hadis arbain nawawi ke ?",
@@ -102,7 +102,7 @@ class TestExamActivity() : AppCompatActivity() {
                         salah++
                     }
 
-                    nomor++
+                    nomor++ // next soal
                     if (nomor < pertanyaan.size){
                         TvPertanyaan.setText(pertanyaan[nomor])
                         RbA.setText(pilihan[(nomor * 4) + 0])
@@ -110,6 +110,7 @@ class TestExamActivity() : AppCompatActivity() {
                         RbC.setText(pilihan[(nomor * 4) + 2])
                         RbD.setText(pilihan[(nomor * 4) + 3])
                     } else {
+                    // nilai
                         hasil = (benar * 6.6) + 1
 
                         val intent = Intent(this@TestExamActivity, HasilExamActivity::class.java)

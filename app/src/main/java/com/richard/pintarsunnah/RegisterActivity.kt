@@ -27,7 +27,7 @@ class RegisterActivity : AppCompatActivity() {
 
         fAuth = FirebaseAuth.getInstance()
         dRef = FirebaseDatabase.getInstance().reference
-
+        // menghilangkan error pada textfield ketka udah di isi
         binding.apply {
             EtNama.doOnTextChanged { text, start, before, count -> TILayoutNama.error = null }
             EtEmailDaftar.doOnTextChanged { text, start, before, count -> TILayoutEmailDaftar.error = null }
@@ -76,7 +76,7 @@ class RegisterActivity : AppCompatActivity() {
         var email = binding.EtEmailDaftar.text.toString()
         var nama = binding.EtNama.text.toString()
         var uuid = fAuth.uid.toString()
-
+        // realtime database
         dRef.child("data_user").child(uuid).setValue(UserModel(email, nama, uuid))
 
         if (true){
@@ -85,6 +85,7 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun daftar(email : String, password : String){
+        //authtentifikasi
         fAuth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
